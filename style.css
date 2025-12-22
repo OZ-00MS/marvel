@@ -450,3 +450,194 @@ header ul li:hover {
     font-size: 1rem;
     line-height: 1.5;
 }
+.hulk {
+    width: 70%;
+    min-height: 400px;         /* ensures enough height for text */
+    background-image: url('pic/146393.jpg');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+    border-radius: 12px;
+    position: relative;        /* for overlay */
+    margin: 20px auto;         /* center horizontally */
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    color: white;              /* text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* place text at bottom */
+    padding: 40px;
+}
+
+/* Optional: add a semi-transparent overlay for better readability */
+.hulk::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* dark overlay */
+    z-index: 1;
+}
+
+/* Ensure text is above overlay */
+.hulk h1, .hulk p {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 10px 0;
+}
+
+.hulk h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hulk p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.captain {
+    width: 70%;
+    min-height: 400px;         /* ensures enough height for text */
+    background-image: url('pic/4744.jpg');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+    border-radius: 12px;
+    position: relative;        /* for overlay */
+    margin: 20px auto;         /* center horizontally */
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    color: white;              /* text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* place text at bottom */
+    padding: 40px;
+}
+
+/* Optional: add a semi-transparent overlay for better readability */
+.captain::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* dark overlay */
+    z-index: 1;
+}
+
+/* Ensure text is above overlay */
+.captain h1, .captain p {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 10px 0;
+}
+
+.captain h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.captain p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.Logan {
+    width: 70%;
+    min-height: 400px;         /* ensures enough height for text */
+    background-image: url('pic/275375.jpg');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+    border-radius: 12px;
+    position: relative;        /* for overlay */
+    margin: 20px auto;         /* center horizontally */
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    color: white;              /* text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* place text at bottom */
+    padding: 40px;
+}
+
+/* Optional: add a semi-transparent overlay for better readability */
+.Logan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* dark overlay */
+    z-index: 1;
+}
+
+/* Ensure text is above overlay */
+.Logan h1, .Logan p {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 10px 0;
+}
+
+.Logan h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.Logan p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.widow{    
+    width: 70%;
+    min-height: 400px;         /* ensures enough height for text */
+    background-image: url('pic/430144.jpg');
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;  
+    border-radius: 12px;
+    position: relative;        /* for overlay */
+    margin: 20px auto;         /* center horizontally */
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    color: white;              /* text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* place text at bottom */
+    padding: 40px;
+}
+
+/* Optional: add a semi-transparent overlay for better readability */
+.widow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* dark overlay */
+    z-index: 1;
+}
+
+/* Ensure text is above overlay */
+.widow h1, .widow p {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 10px 0;
+}
+
+.widow h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.widow p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
