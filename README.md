@@ -30,7 +30,7 @@ Follow these steps to run the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/marvel-heroes-website.git
+git clone https://github.com/OZ-00MS/marvel.git
 
 # Navigate into the project directory
 cd marvel-heroes-website
