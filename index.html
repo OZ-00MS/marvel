@@ -7,16 +7,17 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-<div class="home">
+<div class="home" id="home">
     <header>
         <ul>
-            <li>Home</li>
-            <li>Heroes</li>
-            <li>Video</li>
-            <li>About</li>
+            <a href="#home"><li>Home</li></a>
+            <a href="#heroes"><li>Heroes</li>
+            <a href="#Video"><li>Video</li></a>
+            <a href="#about"><li>About</li></a>
         </ul>
     </header>
     <div class="home-content">
@@ -28,7 +29,7 @@
 
         <div class="home-buttons">
             <a href="#heroes"><button class="btn primary">View Heroes</button></a>
-            <button class="btn secondary">Movies</button>
+           <a href="#Video"> <button class="btn secondary">Movies</button></a>
 </div>
 </div>
 </div>
@@ -96,12 +97,77 @@ Dixième film de la franchise X-Men, Logan est le troisième film consacré à W
                         <div class="widow">
                 <h1>Tblack widow</h1>
                 <p>
-Vingt-quatrième film de l'univers cinématographique Marvel et le premier de la phase IV, il est centré sur le personnage de la Veuve noire, et plus précisément sur la première incarnation du personnage, Natasha Romanoff. Scarlett Johansson y reprend le rôle de Romanoff pour la première fois en tant que personnage central de l'intrigue après l'avoir interprété dans les films sur l'équipe des Avengers ainsi que dans plusieurs autres centrés sur d'autres héros de l'univers cinématographique. Le film introduit également la seconde incarnation de Black Widow, Yelena Belova, incarnée par Florence Pugh.                </p>
+Vingt-quatrième film de l'univers cinématographique Marvel et le premier de la phase IV, il est centré sur le personnage de la Veuve noire, et plus précisément sur la première incarnation du personnage, Natasha Romanoff. Scarlett Johansson y reprend le rôle de Romanoff pour la première fois en tant que personnage central de l'intrigue après l'avoir interprété dans les films sur l'équipe des Avengers ainsi que dans plusieurs autres centrés sur d'autres héros de l'univers cinématographique.  </p>
             </div>
 </div>
 </section>
 <br>
-        
+<section class="Video" id="Video">
+  <button class="arrow left">&#10094;</button>
+
+  <div class="video-slider">
+    <div class="slide">
+      <video src="pic/Avengers_ Doomsday - Trailer (2026) Marvel Studios (720p).mp4" controls></video>
+    </div>
+    <div class="slide">
+      <video src="pic/Doctor Strange 3 (2026) – First Trailer _ Benedict Cumberbatch, Charlize Theron _ Concept Trailer (480p).mp4" controls></video>
+    </div>
+    <div class="slide">
+      <video src="pic/Marvel' Avengers_ Doomsday - Official Teaser Trailer (LEAKED) (720p).mp4" controls></video>
+    </div>
+    <div class="slide">
+      <video src="pic/SPIDER-MAN_ BRAND NEW DAY – First Trailer (2026) _ Tom Holland (720p).mp4" controls></video>
+    </div>
+    <div class="slide">
+      <video src="pic/VENOM 4_ KING IN BLACK - FIRST TRAILER (2025) _ Tom Hardy, Tom Holland Concept Trailer (4k) (720p).mp4" controls></video>
+    </div>
+  </div>
+
+  <button class="arrow right">&#10095;</button>
+</section>
+
         <script src="" async defer></script>
+   <script>
+  const slider = document.querySelector('.video-slider');
+  const slides = document.querySelectorAll('.slide video');
+  let index = 0;
+
+  function updateSlider() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    slides.forEach(video => video.pause());
+  }
+
+  document.querySelector('.arrow.right').onclick = () => {
+    index = (index + 1) % slides.length;
+    updateSlider();
+  };
+
+  document.querySelector('.arrow.left').onclick = () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlider();
+  };
+</script>
+<footer class="about" id="about">
+  <div class="about-container">
+    <h2>About This Site</h2>
+    <p>
+      This website is a Marvel-themed project showcasing heroes, videos,
+      and interactive content. Built with HTML, CSS, and JavaScript
+      for learning and creativity.
+    </p>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/gundam_00ms" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://github.com/OZ-00MS" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+
+    <span class="copy">© 2025 Marvel Fan Project</span>
+  </div>
+</footer>
+
     </body>
 </html>
