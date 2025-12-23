@@ -1,4 +1,4 @@
-# Marvel Heroes Website
+ # Marvel Heroes Website
 
 A responsive and visually appealing Marvel-themed website showcasing popular Marvel heroes like Spider-Man, Iron Man, Doctor Strange, and Black Panther.
 
@@ -30,7 +30,7 @@ Follow these steps to run the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/OZ-00MS/marvel.git
+https://github.com/OZ-00MS/marvel.git
 
 # Navigate into the project directory
 cd marvel-heroes-website
